@@ -1,0 +1,11 @@
+/* CSS Document */
+
+.iconBox {
+    background-color: #333333;
+    border-radius: 5px 5px 5px 5px;
+    display: inline-table;
+    height: 50px;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+}
