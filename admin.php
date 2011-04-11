@@ -41,7 +41,7 @@ function get_list_iconconf_path ($dir) {
 				}
 			
 				if($ext_fichier == 'conf.php') { //On ne prend que les .conf.php
-					$path = str_replace("/plugins/Icons_Set", "", $path);
+					$path = str_replace("./plugins/Icons_Set/icons/", "", $path);
 					$list_iconconf_path[]=$path;
 				}
 			}
@@ -130,7 +130,7 @@ include_once(PHPWG_ROOT_PATH.'admin/include/themes.class.php');
 $themes = new themes();
 $themes->sort_fs_themes();
 $all_themes=array();
-foreach ($conf_themes as $theme_id => $iconset) // theme supprimé
+foreach ($conf_themes as $theme_id => $iconset)
 {
 	$all_themes[$theme_id]=array(
 	'name'=>$themes->fs_themes[$theme_id]['name'],
@@ -139,9 +139,28 @@ foreach ($conf_themes as $theme_id => $iconset) // theme supprimé
 	'icon'=>$iconset,
 	);
 }
+
+$all_icons=array();
+$values=array();
+$output=array();
+foreach ($conf_icons as $iconset)
+{
+	include_once('icons/'.$iconset);
+	$all_icons[]=array(
+	'path'=>$iconset,
+  'name' => $iconsetconf['name'],
+  'id' => $iconsetconf['id'],
+  'icon_file' => $iconsetconf['icon_file'],
+  'css_file' => $iconsetconf['css_file'],
+	);
+	$values[]=$iconset;
+	$output[]=$iconsetconf['name'];
+}
 $template->assign(array(
   'all_themes' => $all_themes,
-  'all_icons' => $conf_icons,
+  'all_icons' => $all_icons,
+  'values' => $values,
+  'output' => $output,
 ));
 
 $template->assign(array(

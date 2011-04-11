@@ -14,11 +14,8 @@
     <div class="themeActions">
       <div>
       <select name="set">
-        <option value="NULL">{'iconset_nochange'|@translate}</option>
         <option value="NULL">{'iconset_nothing'|@translate}</option>
-        {foreach from=$list_set item=ls}
-        <option value="{$ls.FILE}">{$ls.TEXTE}</option>
-        {/foreach}
+        {html_options output=$output values=$values selected=$theme.icon}
       </select>
       </div>
     </div> <!-- themeActions -->
