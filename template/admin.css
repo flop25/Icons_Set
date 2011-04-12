@@ -1,12 +1,35 @@
 /* CSS Document */
 
 .iconBox {
-    background-color: #333333;
-    border-radius: 5px 5px 5px 5px;
-    display: inline-table;
-    height: 50px;
-    margin: 5px;
-    overflow: hidden;
-    text-align: center;
-		width:100%;
+	background-color: #333333;
+	border-radius: 5px 5px 5px 5px;
+	display: inline-table;
+	height: 50px;
+	margin: 5px;
+	overflow: hidden;
+	text-align: center;
+	width:100%;
+}
+.iconShot LI {
+	float:left;
+	list-style:none;
+}
+.iconName {
+	float:left;
+	line-height: 50px;
+	width:200px;
+	text-align:center;
+	font-weight: bold;
+}
+.iconShot {
+	float:left;
+	padding-left:50p;
+	height: 50px;
+}
+.see_all {
+	margin-left:10px;
+}
+.iconShot a:hover {
+	text-decoration:none;
+	border-bottom:none;
 }

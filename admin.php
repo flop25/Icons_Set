@@ -11,6 +11,42 @@ $page['infos'] = array();
 if (isset($_POST['envoi_config']) and $_POST['envoi_config']=='iconset')
 {
 	check_pwg_token();
+	$conf_iconset = @unserialize($conf['iconset']);//pwg_db_real_escape_string(serialize($conf_iconset))
+	$conf_themes=$conf_iconset['themes'];
+	$conf_icons=$conf_iconset['icons'];
+	$conf_icons=$conf_iconset['icons'];
+	$error_update='';
+	$update_ok='';
+	foreach ($conf_themes as $theme_id => $iconset) // theme supprimé
+	{
+		if (isset($_POST[$theme_id]) and isset($conf_themes[$theme_id]) and $conf_themes[$theme_id]!=$_POST[$theme_id] and in_array($_POST[$theme_id], $conf_icons))
+		{
+			$conf_themes[$theme_id]=$_POST[$theme_id];
+			$update_ok.=$theme_id.' / ';
+		}
+		elseif (empty($_POST[$theme_id]) and $conf_themes[$theme_id]!=$_POST[$theme_id])
+		{
+			$conf_themes[$theme_id]='';
+			$update_ok.=$theme_id.' / ';
+		}
+		elseif (!isset($_POST[$theme_id]) or !isset($conf_themes[$theme_id]) or (!in_array($_POST[$theme_id], $conf_icons) and !empty($_POST[$theme_id])) )
+		{
+			$error_update.=$theme_id.' / ';
+		}
+	}
+	$conf['iconset']=array(
+		'themes'=>$conf_themes,
+		'icons'=>$conf_icons
+		);
+  $query = '
+    UPDATE '.CONFIG_TABLE.'
+    SET value="'.pwg_db_real_escape_string(serialize($conf['iconset'])).'"
+    WHERE param="iconset"
+    LIMIT 1';
+  pwg_query($query);
+	if (!empty($error_update)) { 	array_push($page['infos'], l10n('iconset_error_update').$error_update );	 }
+	if (!empty($update_ok)) { 	array_push($page['infos'], l10n('iconset_update_ok').$update_ok );	 }
+	load_conf_from_db();
 }
 ////////////////////////////////////////////////
 ////////[ liste les icones dispo  ]    //////////
@@ -116,6 +152,7 @@ function check_config()
     WHERE param="iconset"
     LIMIT 1';
   pwg_query($query);
+	load_conf_from_db();
 	if (!empty($info_new_theme)) { 	array_push($page['infos'], l10n('iconset_info_new_theme').$info_new_theme );	 }
 	if (!empty($info_new_icon)) { 	array_push($page['infos'], l10n('iconset_info_new_icon').$info_new_icon );	 }
 	if (!empty($info_deleted_theme)) { 	array_push($page['infos'], l10n('iconset_info_deleted_theme').$info_deleted_theme );	 }
@@ -143,6 +180,12 @@ foreach ($conf_themes as $theme_id => $iconset)
 $all_icons=array();
 $values=array();
 $output=array();
+$template->func_combine_css(array(
+	'path' => 'themes/default/iconset.css',
+	),
+	$smarty
+);
+
 foreach ($conf_icons as $iconset)
 {
 	include_once('icons/'.$iconset);
@@ -152,9 +195,15 @@ foreach ($conf_icons as $iconset)
   'id' => $iconsetconf['id'],
   'icon_file' => $iconsetconf['icon_file'],
   'css_file' => $iconsetconf['css_file'],
+  'css_file_admin' => $iconsetconf['css_file_admin'],
 	);
 	$values[]=$iconset;
 	$output[]=$iconsetconf['name'];
+	$template->func_combine_css(array(
+		'path' => $iconsetconf['css_file_admin'],
+		),
+		$smarty
+	);
 }
 $template->assign(array(
   'all_themes' => $all_themes,
@@ -172,6 +221,7 @@ $template->func_combine_css(array(
 	),
 	$smarty
 );
+
 $template->set_filename('plugin_admin_content', dirname(__FILE__) .'/template/admin.tpl');
 $template->assign_var_from_handle('ADMIN_CONTENT', 'plugin_admin_content');
 
