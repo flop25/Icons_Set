@@ -7,7 +7,9 @@ global $template, $conf, $user;
 load_language('plugin.lang', ICONSET_PATH);
 $page['infos'] = array();
 
-
+// +-------------------------------------------------------+
+// |                  envoi de la config                   |
+// +-------------------------------------------------------+
 if (isset($_POST['envoi_config']) and $_POST['envoi_config']=='iconset')
 {
 	check_pwg_token();
@@ -48,10 +50,13 @@ if (isset($_POST['envoi_config']) and $_POST['envoi_config']=='iconset')
 	if (!empty($update_ok)) { 	array_push($page['infos'], l10n('iconset_update_ok').$update_ok );	 }
 	load_conf_from_db();
 }
-////////////////////////////////////////////////
-////////[ liste les icones dispo  ]    //////////
+
+// +-------------------------------------------------------+
+// |            liste les icones dispo                     |
+// +-------------------------------------------------------+
+
 // RQ : un set d'icone = chemin vers le *.conf.php ; on associe (ou pas) un fichier *.conf.php par thème
-////////////////////////////////////////////////
+
 function get_list_iconconf_path ($dir) {
 	static $list_iconconf_path=array();
 	$dh = opendir ($dir);
@@ -86,7 +91,9 @@ function get_list_iconconf_path ($dir) {
 	closedir ($dh);
 	return $list_iconconf_path;
 }	
-
+// +-------------------------------------------------------+
+// |          Vérifie l'intégrité de la config             |
+// +-------------------------------------------------------+
 function check_config()
 {
 	global $conf, $prefixeTable, $page;
@@ -158,8 +165,16 @@ function check_config()
 	if (!empty($info_deleted_theme)) { 	array_push($page['infos'], l10n('iconset_info_deleted_theme').$info_deleted_theme );	 }
 	if (!empty($info_deleted_icon)) { 	array_push($page['infos'], l10n('iconset_info_deleted_icon').$info_deleted_icon );	 }
 }
-check_config();
-load_conf_from_db();
+
+// +-------------------------------------------------------+
+// |                début réel                             |
+// +-------------------------------------------------------+
+
+if (!isset($_POST['envoi_config']))// on économise du temps
+{
+	check_config();
+	load_conf_from_db();
+}
 $conf_iconset = @unserialize($conf['iconset']);//pwg_db_real_escape_string(serialize($conf_iconset))
 $conf_themes=$conf_iconset['themes'];
 $conf_icons=$conf_iconset['icons'];
@@ -167,6 +182,8 @@ include_once(PHPWG_ROOT_PATH.'admin/include/themes.class.php');
 $themes = new themes();
 $themes->sort_fs_themes();
 $all_themes=array();
+
+// affichage des themes
 foreach ($conf_themes as $theme_id => $iconset)
 {
 	$all_themes[$theme_id]=array(
@@ -186,9 +203,10 @@ $template->func_combine_css(array(
 	$smarty
 );
 
+// affichage des icônes
 foreach ($conf_icons as $iconset)
 {
-	include_once('icons/'.$iconset);
+	@include_once('icons/'.$iconset);
 	$all_icons[]=array(
 	'path'=>$iconset,
   'name' => $iconsetconf['name'],
