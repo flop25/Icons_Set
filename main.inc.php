@@ -32,7 +32,7 @@ function load_set()
 	$conf_iconset = @unserialize($conf['iconset']);//pwg_db_real_escape_string(serialize($conf_iconset))
 	$conf_themes=$conf_iconset['themes'];
 	$conf_icons=$conf_iconset['icons'];
-	if (isset($user['theme']) and array_key_exists($user['theme'], $conf_themes) and !empty($conf_themes[$user['theme']]) and file_exists(ICONS_PATH.$conf_themes[$user['theme']]) )
+	if (isset($user['theme']) and is_array($conf_themes) and array_key_exists($user['theme'], $conf_themes) and !empty($conf_themes[$user['theme']]) and file_exists(ICONS_PATH.$conf_themes[$user['theme']]) )
 	{
 		include ICONS_PATH.$conf_themes[$user['theme']];
 		$template->func_combine_css(array(

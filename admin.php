@@ -2,10 +2,11 @@
 
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
-global $template, $conf, $user;
+global $template, $conf, $user, $page;
 
 load_language('plugin.lang', ICONSET_PATH);
-$page['infos'] = array();
+//$page['infos'] = array();
+//$page['errors'] = array();
 
 // +-------------------------------------------------------+
 // |                  envoi de la config                   |
@@ -46,7 +47,7 @@ if (isset($_POST['envoi_config']) and $_POST['envoi_config']=='iconset')
     WHERE param="iconset"
     LIMIT 1';
   pwg_query($query);
-	if (!empty($error_update)) { 	array_push($page['infos'], l10n('iconset_error_update').$error_update );	 }
+	if (!empty($error_update)) { 	array_push($page['errors'], l10n('iconset_error_update').$error_update );	 }
 	if (!empty($update_ok)) { 	array_push($page['infos'], l10n('iconset_update_ok').$update_ok );	 }
 	load_conf_from_db();
 }
@@ -122,7 +123,12 @@ function check_config()
 		{
 			continue;
 		}
-		if (!array_key_exists($fs_theme['id'], $conf_themes)) // theme ajouté
+		if (!is_array($conf_themes)) // theme ajouté
+		{
+			$info_new_theme.=$theme_id.'<br>';
+			$conf_themes[$theme_id]=''; // RAZ
+		}
+		elseif (!array_key_exists($fs_theme['id'], $conf_themes)) // theme ajouté
 		{
 			$info_new_theme.=$theme_id.'<br>';
 			$conf_themes[$theme_id]=''; // RAZ
@@ -144,7 +150,14 @@ function check_config()
 	}
 	foreach ($all_icons as $iconset) // icones ajoutées
 	{
-		if (!in_array($iconset, $conf_icons))
+		if (is_array($conf_icons))
+		{
+			if (!in_array($iconset, $conf_icons))
+			{
+				$info_new_icon.=$iconset.'<br>';
+			}
+		}
+		else
 		{
 			$info_new_icon.=$iconset.'<br>';
 		}
