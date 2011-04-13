@@ -28,20 +28,22 @@ function iconset_admin_menu($menu)
 add_event_handler('loc_after_page_header', 'load_set');
 function load_set()
 {
-	global $template, $user, $conf;
-	$conf_iconset = @unserialize($conf['iconset']);//pwg_db_real_escape_string(serialize($conf_iconset))
-	$conf_themes=$conf_iconset['themes'];
-	$conf_icons=$conf_iconset['icons'];
-	if (isset($user['theme']) and is_array($conf_themes) and array_key_exists($user['theme'], $conf_themes) and !empty($conf_themes[$user['theme']]) and file_exists(ICONS_PATH.$conf_themes[$user['theme']]) )
+	if (!defined('IN_ADMIN') or !IN_ADMIN)
 	{
-		include ICONS_PATH.$conf_themes[$user['theme']];
-		$template->func_combine_css(array(
-			'path' => $iconsetconf['css_file'],
-			'order' => 100,
-			),
-			$smarty
-		);
-		
+		global $template, $user, $conf;
+		$conf_iconset = @unserialize($conf['iconset']);//pwg_db_real_escape_string(serialize($conf_iconset))
+		$conf_themes=$conf_iconset['themes'];
+		$conf_icons=$conf_iconset['icons'];
+		if (isset($user['theme']) and is_array($conf_themes) and array_key_exists($user['theme'], $conf_themes) and !empty($conf_themes[$user['theme']]) and file_exists(ICONS_PATH.$conf_themes[$user['theme']]) )
+		{
+			include ICONS_PATH.$conf_themes[$user['theme']];
+			$template->func_combine_css(array(
+				'path' => $iconsetconf['css_file'],
+				'order' => 100,
+				),
+				$smarty
+			);
+		}
 	}
 
 

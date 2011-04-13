@@ -3,6 +3,6 @@
 	background-image: url(outline_ff3363.png);
 }
 
-#iconBox_sylvia .pwg-icon a:hover {
+#iconBox_sylvia a:hover .pwg-icon {
 	background-image: url(outline_ff7700.png);
 }
