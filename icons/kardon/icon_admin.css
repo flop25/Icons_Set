@@ -1,0 +1,8 @@
+
+#iconBox_kardon .pwg-icon {
+	background-image: url(icons_sprite.png);
+}
+
+#iconBox_kardon a:hover .pwg-icon {
+	background-image: url(icons_sprite_hover.png);
+}

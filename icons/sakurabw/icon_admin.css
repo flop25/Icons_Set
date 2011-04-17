@@ -1,0 +1,8 @@
+
+#iconBox_sakurabw .pwg-icon {
+	background-image: url(icons_sprite.png);
+}
+
+#iconBox_sakurabw a:hover .pwg-icon {
+	background-image: url(icons_sprite_hover.png);
+}

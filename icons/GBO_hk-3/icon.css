@@ -1,0 +1,10 @@
+@import '../../../../themes/default/iconset.css';
+
+.pwg-icon {
+	background-image: url(outline_808080.png);
+}
+
+A:hover .pwg-icon {
+	background-image: url(outline_c92.png);
+}
+

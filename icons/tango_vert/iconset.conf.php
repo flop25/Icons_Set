@@ -1,4 +1,6 @@
 <?php
+// http://tango.freedesktop.org/
+// The Tango base icon theme is released to the Public Domain
 $iconsetconf = array(
   'name' => 'Tango Icon Green',
   'id' => 'tango_vert',

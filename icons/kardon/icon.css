@@ -1,0 +1,10 @@
+@import '../../../../themes/default/iconset.css';
+
+.pwg-icon {
+	background-image: url(icons_sprite.png);
+}
+
+A:hover .pwg-icon {
+	background-image: url(icons_sprite_hover.png);
+}
+

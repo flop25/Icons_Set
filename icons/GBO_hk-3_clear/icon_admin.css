@@ -1,0 +1,8 @@
+
+#iconBox_GBO_hk-3_clear .pwg-icon {
+	background-image: url(outline_808060.png);
+}
+
+#iconBox_GBO_hk-3_clear a:hover .pwg-icon {
+	background-image: url(outline_ffffff.png);
+}
