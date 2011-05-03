@@ -1,6 +1,6 @@
 @import '../../../../themes/default/iconset.css';
 
-.pwg-icon, #iconBox_tango_vert .pwg-icon{
+.pwg-icon, A:hover .pwg-icon {
 	background-image: url(sprite.png);
 }
 A.pwg-button {

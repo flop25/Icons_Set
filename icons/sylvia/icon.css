@@ -1,10 +1,10 @@
 @import '../../../../themes/default/iconset.css';
 
-.pwg-icon, #iconBox_sylvia .pwg-icon {
+.pwg-icon {
 	background-image: url(outline_ff3363.png);
 }
 
-A:hover .pwg-icon, #iconBox_sylvia .pwg-icon a:hover {
+A:hover .pwg-icon {
 	background-image: url(outline_ff7700.png);
 }
 

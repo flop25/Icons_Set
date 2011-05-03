@@ -1,11 +1,12 @@
 @import '../../../../themes/default/iconset.css';
 
-.pwg-icon, #iconBox_tango_vert .pwg-icon{
+.pwg-icon, A:hover .pwg-icon {
 	background-image: url(sprite.png);
 }
 A.pwg-button {
 	border:none;
 }
+
 .pwg-state-disabled .pwg-icon-arrow-e{ background-position: 0 -144px; width: 22px; height: 22px; } 
 .pwg-state-disabled .pwg-icon-arrow-w{ background-position: 0 -360px; width: 22px; height: 22px; } 
 .pwg-state-disabled .pwg-icon-arrowstop-e{ background-position: 0 -504px; width: 22px; height: 22px; } 
