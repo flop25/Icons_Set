@@ -1,0 +1,41 @@
+#iconBox_default .pwg-icon, #iconBox_default A:hover .pwg-icon {
+	background-image: url(sprite.png);
+}
+#iconBox_default .pwg-icon-arrow-e{ background-position: 0 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-state-disabled .pwg-icon-arrow-e{ background-position: -34px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-arrow-n{ background-position: -68px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-arrow-w{ background-position: -102px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-state-disabled .pwg-icon-arrow-w{ background-position: -136px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-arrowstop-e{ background-position: -170px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-state-disabled .pwg-icon-arrowstop-e{ background-position: -204px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-arrowstop-w{ background-position: -238px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-state-disabled .pwg-icon-arrowstop-w{ background-position: -272px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-caddie-add{ background-position: -306px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-calendar{ background-position: -340px 0; width: 22px; height: 22px; } 
+#iconBox_default .pwg-icon-camera-calendar{ background-position: -372px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-camera-info{ background-position: -406px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-category-edit{ background-position: -440px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-category-view-flat{ background-position: -474px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-category-view-normal{ background-position: -508px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-clock-minus{ background-position: -542px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-state-disabled .pwg-icon-clock-minus{ background-position: -576px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-clock-plus{ background-position: -610px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-state-disabled .pwg-icon-clock-plus{ background-position: -644px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-close{ background-position: -678px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-cloud{ background-position: -712px 0; width: 22px; height: 22px; } 
+#iconBox_default .pwg-icon-edit{ background-position: -744px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-favorite-del{ background-position: -778px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-favorite{ background-position: -812px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-favorite-add{ background-position: -812px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-help{ background-position: -846px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-home{ background-position: -880px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-letters{ background-position: -914px 0; width: 22px; height: 22px; } 
+#iconBox_default .pwg-icon-lost-password{ background-position: -946px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-pause{ background-position: -980px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-play{ background-position: -1014px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-register{ background-position: -1048px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-repeat-play{ background-position: -1082px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-repeat-stop{ background-position: -1116px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-representative{ background-position: -1150px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-save{ background-position: -1184px 0; width: 24px; height: 24px; } 
+#iconBox_default .pwg-icon-slideshow{ background-position: -1218px 0; width: 24px; height: 24px; } 
