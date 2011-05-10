@@ -1,5 +1,8 @@
 @import '../../../../themes/default/iconset.css';
 
+
+
+@import '../../iconset_disabled.css';
 .pwg-icon {
 	background-image: url(outline_808060.png);
 }

@@ -1,5 +1,8 @@
 @import '../../../../themes/default/iconset.css';
 
+
+
+@import '../../iconset_disabled.css';
 .pwg-icon, #iconBox_old_sylvia .pwg-icon {
 	background-image: url(showimage.png);
 }
