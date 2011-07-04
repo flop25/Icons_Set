@@ -3,7 +3,7 @@
 Plugin Name: Icons Set
 Version: auto
 Description: Allow you to use other icons for any themes
-Plugin URI: http://phpwebgallery.net/ext/extension_view.php?eid=
+Plugin URI: http://phpwebgallery.net/ext/extension_view.php?eid=527
 Author: Flop25
 Author URI: http://www.planete-flop.fr/
 */
