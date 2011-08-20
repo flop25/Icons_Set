@@ -6,9 +6,9 @@ $lang['iconset_info_new_icon'] = 'Zestaw ikon został dodany: ';
 $lang['iconset_info_deleted_theme'] = 'Temat został usunięty: ';
 $lang['iconset_info_deleted_icon'] = 'Zestaw ikon został usunięty:: ';
 
-$lang['iconset_configpage'] = 'Icons Set Config Page';
+$lang['iconset_configpage'] = 'Strona Konfiguracyjna Zestawów Ikon';
 
-$lang['iconset_All_Themes'] = 'All the themes are below : select an icons set';
+$lang['iconset_All_Themes'] = 'Wszystkie poniższe tematy: ustaw zestaw ikon';
 $lang['iconset_nothing'] = "oryginalne ikony";
 
 $lang['iconset_send'] = "Zapisz zmiany konfiguracji";
