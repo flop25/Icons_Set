@@ -1,0 +1,8 @@
+
+#iconBox_grum_dark_II .pwg-icon {
+	background-image: url(icons_sprite.png);
+}
+
+#iconBox_grum_dark_II a:hover .pwg-icon {
+	background-image: url(icons_sprite_hover.png);
+}

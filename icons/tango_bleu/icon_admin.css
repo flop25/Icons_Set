@@ -1,54 +1,54 @@
-#iconBox_tango_vert .pwg-icon {
+#iconBox_tango_bleu .pwg-icon {
 	background-image: url(sprite.png);
 }
-#iconBox_tango_vert A.pwg-button {
+#iconBox_tango_bleu A.pwg-button {
 	border:none;
 }
-#iconBox_tango_vert .pwg-state-disabled .pwg-icon-arrow-e{ background-position: 0 -144px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-apropos{ background-position: 0 0; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-arrow-e{ background-position: 0 -37px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-state-disabled .pwg-icon-arrow-e{ background-position: 0 -74px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-arrow-n{ background-position: 0 -111px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-arrow-w{ background-position: 0 -148px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-state-disabled .pwg-icon-arrow-w{ background-position: 0 -185px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-arrowstop-e{ background-position: 0 -222px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-state-disabled .pwg-icon-arrowstop-e{ background-position: 0 -259px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-arrowstop-w{ background-position: 0 -296px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-state-disabled .pwg-icon-arrowstop-w{ background-position: 0 -333px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-caddie-add{ background-position: 0 -370px; width: 24px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-calendar{ background-position: 0 -409px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-camera-calendar{ background-position: 0 -446px; width: 24px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-camera-info{ background-position: 0 -485px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-category-edit{ background-position: 0 -522px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-category-view-flat{ background-position: 0 -559px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-category-view-normal{ background-position: 0 -596px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-chat{ background-position: 0 -633px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-clock-minus{ background-position: 0 -670px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-clock-plus{ background-position: 0 -707px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-close{ background-position: 0 -744px; width: 24px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-cloud{ background-position: 0 -783px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-edit{ background-position: 0 -820px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-favorite-add{ background-position: 0 -857px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-favorite-del{ background-position: 0 -894px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-filter-del{ background-position: 0 -931px; width: 24px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-filter{ background-position: 0 -970px; width: 24px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-help{ background-position: 0 -1009px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-home{ background-position: 0 -1046px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-letters{ background-position: 0 -1083px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-lost-password{ background-position: 0 -1120px; width: 24px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-pause{ background-position: 0 -1159px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-play{ background-position: 0 -1196px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-register{ background-position: 0 -1233px; width: 24px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-repeat-play{ background-position: 0 -1272px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-repeat-stop{ background-position: 0 -1309px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-representative{ background-position: 0 -1346px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-rss{ background-position: 0 -1383px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-save{ background-position: 0 -1420px; width: 24px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-search{ background-position: 0 -1459px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-sizes{ background-position: 0 -1496px; width: 48px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-slideshow{ background-position: 0 -1535px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-small_resizable{ background-position: 0 -1572px; width: 16px; height: 16px; } 
-#iconBox_tango_vert .pwg-icon-sort{ background-position: 0 -1603px; width: 24px; height: 24px; } 
-#iconBox_tango_vert .pwg-icon-stop{ background-position: 0 -1642px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-tag{ background-position: 0 -1679px; width: 22px; height: 22px; } 
-#iconBox_tango_vert .pwg-icon-upload{ background-position: 0 -1716px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-state-disabled .pwg-icon-arrow-e{ background-position: 0 -144px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-apropos{ background-position: 0 0; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-arrow-e{ background-position: 0 -37px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-state-disabled .pwg-icon-arrow-e{ background-position: 0 -74px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-arrow-n{ background-position: 0 -111px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-arrow-w{ background-position: 0 -148px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-state-disabled .pwg-icon-arrow-w{ background-position: 0 -185px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-arrowstop-e{ background-position: 0 -222px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-state-disabled .pwg-icon-arrowstop-e{ background-position: 0 -259px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-arrowstop-w{ background-position: 0 -296px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-state-disabled .pwg-icon-arrowstop-w{ background-position: 0 -333px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-caddie-add{ background-position: 0 -370px; width: 24px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-calendar{ background-position: 0 -409px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-camera-calendar{ background-position: 0 -446px; width: 24px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-camera-info{ background-position: 0 -485px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-category-edit{ background-position: 0 -522px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-category-view-flat{ background-position: 0 -559px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-category-view-normal{ background-position: 0 -596px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-chat{ background-position: 0 -633px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-clock-minus{ background-position: 0 -670px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-clock-plus{ background-position: 0 -707px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-close{ background-position: 0 -744px; width: 24px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-cloud{ background-position: 0 -783px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-edit{ background-position: 0 -820px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-favorite-add{ background-position: 0 -857px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-favorite-del{ background-position: 0 -894px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-filter-del{ background-position: 0 -931px; width: 24px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-filter{ background-position: 0 -970px; width: 24px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-help{ background-position: 0 -1009px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-home{ background-position: 0 -1046px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-letters{ background-position: 0 -1083px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-lost-password{ background-position: 0 -1120px; width: 24px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-pause{ background-position: 0 -1159px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-play{ background-position: 0 -1196px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-register{ background-position: 0 -1233px; width: 24px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-repeat-play{ background-position: 0 -1272px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-repeat-stop{ background-position: 0 -1309px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-representative{ background-position: 0 -1346px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-rss{ background-position: 0 -1383px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-save{ background-position: 0 -1420px; width: 24px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-search{ background-position: 0 -1459px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-sizes{ background-position: 0 -1496px; width: 48px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-slideshow{ background-position: 0 -1535px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-small_resizable{ background-position: 0 -1572px; width: 16px; height: 16px; } 
+#iconBox_tango_bleu .pwg-icon-sort{ background-position: 0 -1603px; width: 24px; height: 24px; } 
+#iconBox_tango_bleu .pwg-icon-stop{ background-position: 0 -1642px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-tag{ background-position: 0 -1679px; width: 22px; height: 22px; } 
+#iconBox_tango_bleu .pwg-icon-upload{ background-position: 0 -1716px; width: 22px; height: 22px; } 

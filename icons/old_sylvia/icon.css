@@ -10,4 +10,11 @@
 A:hover .pwg-icon, #iconBox_old_sylvia .pwg-icon a:hover {
 	background-image: url(showimage.png);
 }
-
+#derivativeSwitchLink .pwg-icon {
+  background-image: url(../sylvia/outline_ff3363.png);
+}
+#sortOrderLink .pwg-icon {
+  background-image: url(../sylvia/outline_ff3363.png);
+}
+.pwg-icon-sort {background-position: -52px -52px}
+.pwg-icon-sizes {background-position: -78px -52px}

@@ -10,4 +10,13 @@
 A:hover .pwg-icon {
 	background-image: url(icons_sprite_hover.png);
 }
-
+#derivativeSwitchLink .pwg-icon {
+  background-image: url(../tango_vert/sprite.png);
+  width: 48px !important;
+  height: 24px;
+}
+#sortOrderLink .pwg-icon {
+  background-image: url(../tango_vert/sprite.png);
+}
+.pwg-icon-sizes{ background-position: 0 -1496px; width: 48px; height: 24px; } 
+.pwg-icon-sort{ background-position: 0 -1603px; width: 24px; height: 24px; } 
