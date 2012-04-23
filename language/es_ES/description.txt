@@ -1,0 +1,1 @@
+Permite usar otros iconos en el tema que tienes actualmente.
