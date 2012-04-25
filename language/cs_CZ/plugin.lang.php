@@ -21,7 +21,15 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['iconset_All_Icons'] = 'Sada všech ikon';
-$lang['iconset_All_Themes'] = 'Všechna témata jsou níže : vyber sadu ikon';
+$lang['iconset_All_Themes'] = 'Všechna témata jsou níže: vyber sadu ikon';
 $lang['iconset_nothing'] = 'původní ikony';
 $lang['iconset_seeall'] = 'Zobrazit všechny';
+$lang['iconset_configpage'] = 'Konfigurační stránka pluginu Icons Set';
+$lang['iconset_error_update'] = 'během aktualizace tohoto tématu/těchto témat nastala chyba (prosím zkuste to znovu, nebo napište na piwigo.org/forum):';
+$lang['iconset_info_deleted_icon'] = 'Tato sada ikon byla smazána/Tyto sady ikon byly smazány:';
+$lang['iconset_info_deleted_theme'] = 'Toto téma bylo smazáno/Tato témata byla smazána:';
+$lang['iconset_info_new_icon'] = 'Tato sada ikon byla přidána/Tyto sady ikon byly přidány:';
+$lang['iconset_info_new_theme'] = 'Toto téma bylo přidána/Tato témata byla přidána:';
+$lang['iconset_send'] = 'Uložit změny v konfiguraci';
+$lang['iconset_update_ok'] = 'nastavení tohoto tématu/těchto témat bylo aktualizováno:';
 ?>
