@@ -23,7 +23,7 @@
 $lang['iconset_All_Icons'] = 'Todos los cojuntos de iconos';
 $lang['iconset_All_Themes'] = 'Los temas están abajo, seleccione un conjunto de iconos';
 $lang['iconset_configpage'] = 'Página de configuración de los iconos';
-$lang['iconset_error_update'] = 'un error ocurriódurante el proceso de actualización del tema(s) (por favor, inténtelo de nuevo o escriba un post en el foro de piwigo.org/forum ):';
+$lang['iconset_error_update'] = 'un error ocurrió durante el proceso de actualización del tema(s) (por favor, inténtelo de nuevo o escriba un post en el foro de piwigo.org/forum ):';
 $lang['iconset_info_deleted_icon'] = 'Los iconos han sido borrados';
 $lang['iconset_info_deleted_theme'] = 'El/los tema(s) se han borrado';
 $lang['iconset_info_new_icon'] = 'Los iconos han sido añadidos';
