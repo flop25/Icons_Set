@@ -21,4 +21,15 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['iconset_seeall'] = 'Mostrar tot';
+$lang['iconset_All_Icons'] = 'Tot el conjunt d\'icones';
+$lang['iconset_All_Themes'] = 'Selecciona el conjunt d\'icones dels temes que aparèixen a continuació:';
+$lang['iconset_configpage'] = 'Establiment d\'icones';
+$lang['iconset_error_update'] = 'S\'ha produït un error durant l\'actualització. Intenta-ho de nou i si el problema persisteix, publica-ho al fòrum de Piwigo per a obtindre\'n suport. (http://piwigo.org/fòrum)';
+$lang['iconset_info_deleted_icon'] = 'Les següents incones han sigut eliminades:';
+$lang['iconset_info_deleted_theme'] = 'Els següents temes han sigut eliminats:';
+$lang['iconset_info_new_icon'] = 'Les següents incones han sigut afegides:';
+$lang['iconset_info_new_theme'] = 'Els següents temes han sigut afegits:';
+$lang['iconset_nothing'] = 'Icones originals';
+$lang['iconset_send'] = 'Desar configuració';
+$lang['iconset_update_ok'] = 'La configuració dels següents temes ha sigut actualitzada:';
 ?>
