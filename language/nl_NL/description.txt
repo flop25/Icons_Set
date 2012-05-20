@@ -1,0 +1,1 @@
+Maakt het mogelijk om andere icons voor alle themes te gebruiken
