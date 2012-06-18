@@ -20,16 +20,16 @@
 // | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
-$lang['iconset_All_Icons'] = 'Tüm ikon setleri';
-$lang['iconset_All_Themes'] = 'Aşağıdaki tüm temalar: bir ikon seti seçin';
-$lang['iconset_configpage'] = 'Ikon Seti Konfigürasyon Sayfası';
+$lang['iconset_All_Icons'] = 'Tüm ikon dizileri';
+$lang['iconset_All_Themes'] = 'Aşağıdaki tüm temalar: bir ikon dizisi seçin';
+$lang['iconset_configpage'] = 'Ikon Dizisi Yapılandırma Sayfası';
 $lang['iconset_error_update'] = 'bu tema/temaların güncellenmesi sırasında bir hata oluştu (lütfen tekrar deneyin veya piwigo.org/forum \'a yazın)';
-$lang['iconset_info_deleted_icon'] = 'Bu ikon seti/setleri silinmiştir:';
+$lang['iconset_info_deleted_icon'] = 'Bu ikon dizisi/dizileri silinmiştir:';
 $lang['iconset_info_deleted_theme'] = 'Bu tema/temalar silinmiştir.';
-$lang['iconset_info_new_icon'] = 'Bu ikon seti/setleri eklenmiştir:';
+$lang['iconset_info_new_icon'] = 'Bu ikon dizisi/dizileri eklenmiştir:';
 $lang['iconset_info_new_theme'] = 'Bu tema/temalar eklenmiştir:';
-$lang['iconset_nothing'] = 'orjinal ikonlar';
+$lang['iconset_nothing'] = 'Esas ikonlar';
 $lang['iconset_seeall'] = 'Tümünü gör';
-$lang['iconset_send'] = 'Konfigürasyon değişikliklerini kaydet';
+$lang['iconset_send'] = 'Yapılandırma değişikliklerini kaydet';
 $lang['iconset_update_ok'] = 'bu tema/temaların konfigürasyonu güncellenmiştir:';
 ?>
