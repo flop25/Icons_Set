@@ -21,15 +21,15 @@
 // | USA.                                                                  |
 // +-----------------------------------------------------------------------+
 $lang['iconset_All_Icons'] = 'Alle icons set';
-$lang['iconset_All_Themes'] = 'Alle themes staan hieronder: kies een Icons set';
+$lang['iconset_All_Themes'] = 'Alle themas staan hieronder: kies een Icons set';
 $lang['iconset_configpage'] = 'Icons Set configuratie pagina';
-$lang['iconset_error_update'] = 'een fout is opgetreden gedurende een update van dit/deze theme(s)(Probeer opnieuw of post in het piwigo.org/forum):';
+$lang['iconset_error_update'] = 'er is een fout opgetreden gedurende een update van dit/deze thema(s)(Probeer opnieuw of post in het piwigo.org/forum):';
 $lang['iconset_info_deleted_icon'] = 'Deze icons set(s)zijn verwijded:';
-$lang['iconset_info_deleted_theme'] = 'Deze theme(s)zijn verwijded:';
-$lang['iconset_info_new_icon'] = 'Deze icons set(s)zijn toegevoegd:';
-$lang['iconset_info_new_theme'] = 'Deze theme(s)zijn toegevoegd:';
+$lang['iconset_info_deleted_theme'] = 'Deze thema(s) zijn verwijded:';
+$lang['iconset_info_new_icon'] = 'Deze icons set(s) zijn toegevoegd:';
+$lang['iconset_info_new_theme'] = 'Deze thema(s) zijn toegevoegd:';
 $lang['iconset_nothing'] = 'Orginele icons';
-$lang['iconset_seeall'] = 'bekijk alles';
+$lang['iconset_seeall'] = 'Bekijk alles';
 $lang['iconset_send'] = 'Bewaar wijzigingen in de configuratie';
-$lang['iconset_update_ok'] = 'De configuratie van dit/deze theme(s) zijn geupdate:';
+$lang['iconset_update_ok'] = 'De configuratie van dit/deze thema(s) zijn geupdate:';
 ?>
