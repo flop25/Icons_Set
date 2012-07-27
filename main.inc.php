@@ -40,8 +40,7 @@ function load_set()
 			$template->func_combine_css(array(
 				'path' => $iconsetconf['css_file'],
 				'order' => 100,
-				),
-				$smarty
+				)
 			);
 		}
 	}
