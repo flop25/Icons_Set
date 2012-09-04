@@ -212,8 +212,7 @@ $values=array();
 $output=array();
 $template->func_combine_css(array(
 	'path' => 'themes/default/iconset.css',
-	),
-	$smarty
+	)
 );
 
 // affichage des icônes
@@ -232,8 +231,7 @@ foreach ($conf_icons as $iconset)
 	$output[]=$iconsetconf['name'];
 	$template->func_combine_css(array(
 		'path' => $iconsetconf['css_file_admin'],
-		),
-		$smarty
+		)
 	);
 }
 $template->assign(array(
@@ -249,8 +247,7 @@ $template->assign(array(
 
 $template->func_combine_css(array(
 	'path' => 'plugins/'.ICONSET_DIR.'/template/admin.css',
-	),
-	$smarty
+	)
 );
 
 $template->set_filename('plugin_admin_content', dirname(__FILE__) .'/template/admin.tpl');
