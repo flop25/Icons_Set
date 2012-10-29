@@ -23,13 +23,13 @@
 $lang['iconset_All_Icons'] = '所有图标集';
 $lang['iconset_All_Themes'] = '所有主题如下：选择一个图标集';
 $lang['iconset_configpage'] = '图标集配置页';
-$lang['iconset_error_update'] = '更新（这些）主题过程中发生错误（请重试或在piwigo.org/forum公布）：';
-$lang['iconset_info_deleted_icon'] = '（这些）图标集已被删除：';
-$lang['iconset_info_deleted_theme'] = '（这些）主题已被删除：';
-$lang['iconset_info_new_icon'] = '（这些）图标集已经添加：';
-$lang['iconset_info_new_theme'] = '（这些）主题已经添加：';
+$lang['iconset_error_update'] = '更新主题过程中发生错误（请重试或在piwigo.org/forum公布）：';
+$lang['iconset_info_deleted_icon'] = '图标集已被删除：';
+$lang['iconset_info_deleted_theme'] = '主题已被删除：';
+$lang['iconset_info_new_icon'] = '图标集已经添加：';
+$lang['iconset_info_new_theme'] = '主题已经添加：';
 $lang['iconset_nothing'] = '原始图标';
-$lang['iconset_seeall'] = '察看全部';
+$lang['iconset_seeall'] = '查看全部';
 $lang['iconset_send'] = '保存配置的变更';
-$lang['iconset_update_ok'] = '（这些）主题的配置已经更新：';
+$lang['iconset_update_ok'] = '主题的配置已更新：';
 ?>
