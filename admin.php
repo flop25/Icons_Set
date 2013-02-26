@@ -5,16 +5,13 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 global $template, $conf, $user, $page;
 
 load_language('plugin.lang', ICONSET_PATH);
-//$page['infos'] = array();
-//$page['errors'] = array();
-
 // +-------------------------------------------------------+
 // |                  envoi de la config                   |
 // +-------------------------------------------------------+
 if (isset($_POST['envoi_config']) and $_POST['envoi_config']=='iconset')
 {
 	check_pwg_token();
-	$conf_iconset = @unserialize($conf['iconset']);//pwg_db_real_escape_string(serialize($conf_iconset))
+	$conf_iconset = @unserialize($conf['iconset']);
 	$conf_themes=$conf_iconset['themes'];
 	$conf_icons=$conf_iconset['icons'];
 	$conf_icons=$conf_iconset['icons'];
