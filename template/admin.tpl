@@ -8,7 +8,7 @@
       <div class="themeBoxes"> {foreach from=$all_themes item=theme}
         <div class="themeBox">
           <div class="themeName">{$theme.name}</div>
-          <div class="themeShot"><img src="{$theme.screenshot}" alt="screenshot"></div>
+          <div class="themeShot"><a class="preview-box cboxElement" title="{$theme.name}" style="cursor: default"><img src="{$theme.screenshot}" alt="screenshot" style="height: 200px; width: 250px;"></a></div>
           <div class="themeActions">
             <div>
               <select name="{$theme.id}">
