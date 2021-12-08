@@ -6,6 +6,7 @@ Description: Allow you to use other icons for any themes
 Plugin URI: http://phpwebgallery.net/ext/extension_view.php?eid=527
 Author: Flop25
 Author URI: http://www.planete-flop.fr/
+Has Settings: true
 */
 
 if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
